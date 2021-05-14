@@ -1,0 +1,18 @@
+<main>
+	<div>
+		<h1> Shows Found </h1>
+		<h2 class="chead"> {{searchTerm}} </h2>
+		{{#if uError}}
+		<p class="eror">Search term entered cannot be blank or just spaces.</p>
+		{{else if rFound}}
+		<ul class="showList">
+		{{#each shows}}
+		<li class="eachShow">{{{this}}}</li>
+		{{/each}}
+		</ul>
+		{{else}}
+		<p class="tabber"> No result found for that term <p>
+		{{/if}}
+		<a class="tabber" href="/"> Search Again? </a>
+	</div>
+</main>

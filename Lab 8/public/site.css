@@ -1,0 +1,60 @@
+.pledge {
+	font-size: 10px;
+}
+.chead {
+	font-size: 3em;
+	text-align: center;
+}
+.cheadtwo {
+	font-size: 2.5em;
+	text-align: center;
+}
+.intro {
+	text-align: center;
+	color: blue;
+}
+.bar {
+	width: 50%;
+}
+.but {
+	background-color: green;
+	font-size: 18px;
+}
+.troway {
+	font-size: 12px;
+}
+.tabber {
+	text-align: center;
+}
+.eror {
+	color: red;
+	font-size: 20px;
+}
+.showList {
+	list-style-type: upper-roman;
+}
+.eachShow {
+	padding: 20px;
+}
+.imgC {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border-radius: 20%;
+}
+.dtC {
+	font-size: 16;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.ddC {
+	font-size: 14;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+body {
+	background-color: lightpink;
+}

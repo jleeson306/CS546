@@ -1,0 +1,30 @@
+<main>
+	<div>
+		<h1 class="chead"> Find show by id: {{id}}</h1>
+		{{#if uError}}
+			<p class="eror"> Error with finding a show by that id, no show exists with that id. </id>
+		{{else}}
+			<h2> Data for the show {{name}} </h2>
+			<img class="imgC" alt="{{name}}" src="{{image.medium}}"></img>
+			<dl>
+				<dt class="dtC">Language</dt>
+					<dd class="ddC">{{language}}</dd>
+				<dt class="dtC">Genres</dt>
+					<dd class="ddC">
+						<ul>
+							{{#each genres}}
+							<li>{{{this}}}</li>
+							{{/each}}
+						</ul>
+					</dd>
+				<dt class="dtC">Average Rating</dt>
+					<dd class="ddC">{{rating.average}}</dd>
+				<dt class="dtC">Name of Network</dt>
+					<dd class="ddC">{{network.name}}</dd>
+				<dt class="dtC">Summary</dt>
+					<dd class="ddC">{{summary}}</dd>
+			</dl>
+		{{/if}}
+		<a class="tabber" href="/"> Back to home page? </a>
+	</div>
+</main>

@@ -1,0 +1,15 @@
+<main>
+	<h1 class="chead">Show Finder</h1>
+	<article>
+		<p class="intro">
+			Welcome to my Show finder website. This website allows for you to search a public api of TV shows. You may search it both by individual ID's of shows if you know those, or a search term. This website was a Homework assigment for CS 546.
+		</p>
+		<p class="tabber">Please enter in a term to search by, it cannot be blank.</p>
+		<form class="tabber" action="/search" method="post">
+			<label for="searchTerm">Search Term:<label><br>
+			<input class="bar" type="text" id="searchTerm" name="searchTerm"><br>
+			<input class="but" type="submit" value="Submit">
+		</form>
+		<p class="troway">You can also search for a specific id by going to http://localhost:3000/shows/<your id here> </p>
+	</article>
+</main>

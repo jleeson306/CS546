@@ -1,0 +1,19 @@
+{
+  "name": "cs-546-lab-10",
+  "version": "1.0.0",
+  "description": "Lab 10 for WebDev",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "James Leeson 10433450",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.7"
+  }
+}
