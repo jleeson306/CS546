@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Water Boy</title>
+    {{#each css}}
+        <link rel="stylesheet" href="/css/{{this}}.css" />
+    {{/each}}
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<header>
+    <div class="nav">
+        <a href="/profiles">Profile</a>
+        <a href="/healthlog">Healthlog</a>
+        <a href="/search">Search</a>
+        {{#if loggedIn}}
+        <span>
+            <a href="/logout">Logout</a>
+        </span>
+        {{/if}}
+    </div>
+</header>
+<body>
+    {{{body}}}
+</body>
+{{!-- <footer class="pledge">water boy</footer> --}}
+</html>

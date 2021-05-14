@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{userDisplayName}} - WaterBoy</title>
+        <link rel="stylesheet" href="/css/profiles.css">
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+        <script type="module" src="/js/profiles.js"></script>
+    </head> 
+    <body>
+        <div id="user-sidebar">
+            <div class="user-info">
+                <div class="box-header" id="profile-header">
+                    <h1 id="display-name" data-username={{userDisplayName}}>{{userDisplayName}}</h1>
+                    {{#if loggedIn}}
+                        <button type="button" id="edit-button">Edit</button>
+                    {{/if}}
+                </div>
+                <div id="profile-div">
+                    <h2 class="profile-content" id="real-name">{{userFirstName}} {{userLastName}}</h2>
+                    <h2 class="profile-content" id="gender">{{userGender}}</h5>
+                    <h2 class="profile-content" id="birthday">{{userBirthday}}</h5>
+                    <h2 class="profile-content" id="team">{{userTeam}}</h5>
+                    <div class="line"></div>
+                    <p class="profile-content" id="bio">{{userBio}}</p>
+                </div>
+                {{#if loggedIn}}
+                <div id="form-div" method="PATCH" action="/profiles/{{userDisplayName}}">
+                    <form id="edit-form">
+                        <label for="firstName-field">First Name <input type="text" class="user-input" id="firstName-field" name="firstName"></label>
+                        <label for="lastName-field">Last Name <input type="text" class="user-input" id="lastName-field" name="lastName"></label>
+                        <label for="email-field">Email <input type="text" class="user-input" id="email-field" name="email"></label>
+                        <label for="gender-field">Gender <input type="text" class="user-input" id="gender-field" name="gender"></label>
+                        <label for="birthday-field">Birthday <input type="text" class="user-input" id="birthday-field" name="Birthday"></label>
+                        <label for="team-field">Team <input type="text" class="user-input" id="team-field" name="team"></label>
+                        <div class="line"></div>
+                        <label for="bio-field">Bio <textarea maxlength="500" max-rows="-1" class="user-input" id="bio-field" name="bio"></textarea></label>
+                        <button type="button" id="cancel-button">Cancel</button><button type="submit" id="user-submit">Apply</button>
+                     </form>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        <div id="stats-box">
+            {{#if loggedIn}}
+                <a href="/healthlog/{{userDisplayName}}">Healthlog</a>
+            {{/if}}
+            <div>
+                <h3>Total Water Consumed</h3>
+                <span id="total-water">{{totalWater}}</span>
+                <select id="metrics" name="metrics">
+                    <option value="Liters" selected>L.</option>
+                    <option value="Gallons">Gal.</option>
+                </select>
+                <h3>Calories Burnt</h3><span id="cal-burnt">{{caloriesBurnt}}</span>
+                <h3>Steps Taken</h3><span id="steps-taken">{{totalSteps}}</span>
+                <h3>Exercise</h3>
+                {{!-- Breakdown of exercise --}}
+            </div>
+        </div>
+        <div id="comments-box">
+            <form id="commment-form">
+                <button type="button" id="comment-submit" for="comment-form">Post</button>
+                <input type="text" id="comment-field" placeholder="Add a comment...">
+            </form>
+            <ul id="comments-list">
+            </ul>
+        </div>
+    </body>
+</html>
+</html>

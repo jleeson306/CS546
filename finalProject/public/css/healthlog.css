@@ -1,0 +1,36 @@
+body{
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top right, rgb(12, 8, 66), rgb(4, 6, 109), rgb(9, 11, 155));
+}
+
+h1 {
+    color: white;
+}
+
+.dailyStat{
+    display: block;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: whitesmoke;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+form {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+    background-color: whitesmoke;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 3px;
+    border-radius: 5px;
+}
+ 
+label, input, button {
+    grid-column: 1 / 2;
+}
