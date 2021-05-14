@@ -1,0 +1,11 @@
+{
+  "name": "cs-546-lab-2",
+  "version": "1.0.0",
+  "description": "Lab 2 for WebDev",
+  "main": "index.js",
+  "scripts": {
+	"start": "node index.js"
+  },
+  "author": "James Leeson 10433450",
+  "license": "ISC"
+}
