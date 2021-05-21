@@ -26,3 +26,5 @@ greenplumber              luigismansionwassick
 theprincess               stitchfaceop
 bowser                    kart>kidnapping
 bowser_jr                 mansunshineisslepton
+
+if using for first time you will most likely need to run "npm i" to install your node_modules
