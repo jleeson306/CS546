@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {{#if title}}
+            <title>{{title}}</title>
+        {{else}}
+            <title>Water Boy</title>
+        {{/if}}
+        {{#each css}}
+            <link rel="stylesheet" href="/css/{{this}}.css"/>
+        {{/each}}
+        <link rel="stylesheet" href="/css/site.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                <a href="/profiles">Profile</a>
+                <a href="/healthlog">Healthlog</a>
+                <a href="/search">Search</a>
+                <a href="/workoutvideos">Workout Videos</a>
+                <a href="/calories">Calorie Calculator</a>
+                {{#if loggedIn}}
+                <span>
+                    <a href="/logout">Logout</a>
+                </span>
+                {{/if}}
+            </div>
+        </header>
+        {{{body}}}
+    </body>
+</html>

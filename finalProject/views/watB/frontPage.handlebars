@@ -1,0 +1,90 @@
+<main>
+	<h1 class="chead">Water B💧y</h1>
+	{{#if error}}
+		<h3 id="errorMessage">
+		Error: {{error}}
+		</h3>
+	{{/if}}
+	<div id="logIn" class="formClick">
+		<div id="logInClick" class="formToggle">
+		Log In 
+		</div>	
+		<form class="entryForm" id="logInForm" method="POST" action="/login" name="Log In">
+			<br>
+				<label for="usernameLogIn">
+					Username:
+					<input id="usernameLogIn" name="username"/>
+				</label>
+			<br>
+				<label for="passwordLogIn">
+					Password:
+					<input id="passwordLogIn" name="password" type="password"/>
+				</label>
+			<button type="submit">
+			SUBMIT
+			</button>
+		</form>
+	</div>
+	<div id="signUp" class="formClick"> 
+		<div id="signUpClick" class="formToggle">
+		Sign Up 
+		</div>
+		<form class="entryForm" id="signUpForm" method="POST" action="/signUp" name="Sign Up">
+				<label for="firstName">
+					First Name:
+					<input id="firstName" name="firstName"/>
+				</label>
+				<label for="lastName">
+					Last Name:
+					<input id="lastName" name="lastName"/>
+				</label>
+				<label for="birthday">
+					Birthday:
+					<input id="birthday" name="birthday" type="date"/>
+				</label>
+					<label for="gender">
+						Gender:
+						<input id="gender" name="gender"/>
+					</label>
+				<label for="username">
+					Username:
+					<input id="username" name="username"/>
+				</label>
+			<br>
+				<label for="password">
+					Password:
+					<input id="password" name="password" type="password"/>
+				</label>
+			<br>
+				<label for="email">
+					Email:
+					<input id="email" name="email"/>
+				</label>
+			<button type="submit">
+				GO
+			</button>
+		</form>
+	</div>
+	<div id="description">
+		<h2>Welcome to Water B💧y!</h2>
+		<p>We here at Water B💧y create this website to provide an all in one website for your fitness needs. We belive that fitness aplications should never feel like merely a tool, but a motivation device 
+		with ample functions to help you in every step of your journey. And while making that journey, why not join a clan and make that journey with other like minded individuals. From fitness to water 
+		consumption, this website will help you find the new you. Welcome to the next step in improving your life, welcome to Water B💧y.</p>
+		<div id ="stats">
+			<h3>Community Stats:</h3>
+			Total Steps Taken
+			<div id="totalSteps">
+			</div>
+			Total Liters of Water Consumed
+			<div id="totalWater">
+			</div>
+			Total Calories Burned
+			<div id="totalCalories">
+			</div>
+		</div>
+	</div>
+	    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+		<script src="js/frontPage.js"></script>
+
+</main>

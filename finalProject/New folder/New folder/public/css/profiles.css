@@ -1,0 +1,157 @@
+body{
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top right, rgb(12, 8, 66), rgb(4, 6, 109), rgb(9, 11, 155));
+}
+
+
+.line{
+    width: auto;
+    border-bottom: 1px solid aquamarine;
+}
+
+/*****************
+USER BOX
+*****************/
+#user-sidebar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:whitesmoke;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.box-header{
+    display: flex;
+    line-height: auto;
+    width: inherit;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: linear-gradient(aqua, aquamarine);
+    background-repeat: no-repeat;
+}
+
+#edit-button{
+    justify-self: flex-end;
+    align-self: center;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#edit-form{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#display-name {
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+.profile-content{
+    font-size: medium;
+    margin: 2px;
+}
+
+.user-input{
+    border-radius: 5px;
+    outline: 5px;
+    border:none;
+    background-color: #ebedef;
+}
+
+.user-input:focus{
+    box-shadow: inset 0 0 0 1px black;
+    border-radius: 5px;
+}
+
+#real-name{
+    font-size: medium;
+}
+
+#bio-field{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    resize: none;
+    width: calc(100% - 5ch);
+    height: 30ch;
+}
+
+/****************
+COMMENTS
+**************/
+#comments-box{
+    display: block;
+    color: black;
+    margin-left: 270px;
+    margin-right: 100px;
+}
+#comments-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.comment{
+    color: black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 4px;
+}
+
+.comment a:link, a:visited{
+    color: black;
+}
+
+.loading_icon{
+    position: absolute;
+    width: 100%;
+}
+
+/*********
+USER STATS
+*********/
+#stats-box{
+    display: block;
+    margin-left: 270px;
+    margin-right: 100px;
+    background-color: whitesmoke;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#stats-box h3{
+    margin: 3px;
+}
+
+#stats-box span{
+    margin-left: 30px;
+}
+
+/*********
+CLAN STATS
+*********/
+#clanInfo
+{
+	background-color:tan;
+	margin-left: 270px;
+}
