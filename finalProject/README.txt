@@ -26,3 +26,7 @@ greenplumber              luigismansionwassick
 theprincess               stitchfaceop
 bowser                    kart>kidnapping
 bowser_jr                 mansunshineisslepton
+
+You may need to run "npm i" to install needed files
+
+This was a collaborative team project done by James Leeson, Cassie Ball, Leo Ouyang, Nick Quidas
